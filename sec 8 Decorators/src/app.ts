@@ -6,6 +6,7 @@ function Logger(logString: string) {
   };
 }
 
+
 function WithTemplate(template: string, hookId: string) {
   console.log("TEMPLATE FACTORY");
   return function <T extends { new (...args: any[]): { name: string } }>(
